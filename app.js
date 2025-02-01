@@ -34,6 +34,10 @@ app.get('/elements', (req, res) => {
     res.render('elements', MAIN_DATA)
 })
 
+app.get('/salidas', (req, res) => {
+    res.render('salidas', MAIN_DATA)
+})
+
 app.get('*', (req, res) => {
     // res.send('404|page not found')
     res.sendFile(__dirname + '/public/404.html')
